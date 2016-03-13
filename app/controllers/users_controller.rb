@@ -25,7 +25,7 @@ class UsersController < ApplicationController
   def update
     if @user.update(user_params)
       # 保存に成功した場合はトップページへリダイレクト
-      redirect_to root_path, notice: 'アカウント情報を更新しました'
+      redirect_to @user, notice: 'アカウント情報を更新しました'
     else
       # 保存に失敗した場合は編集画面へ戻す
       render 'edit'

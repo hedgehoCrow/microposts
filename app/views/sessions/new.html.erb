@@ -1,18 +1,42 @@
-<h1>Log in</h1>
+<div class="row">
+    <div class="form-group h1">
+        <div class="icon col-sm-offset-5 col-sm-1">
+            <span class="glyphicon glyphicon glyphicon-user" aria-hidden="true"></span>
+        </div>
+        <div class="content col-sm-6">
+            Log in 
+        </div>
+    </div>
+</div>
+
+<br /><br />
 
 <div class="row">
     <div class="col-md-6 col-md-offset-3">
-        <%= form_for(:session, url: login_path) do |f| %>
+        <%= form_for(:session, html: { class: "form-horizontal" }, url: login_path) do |f| %>
         
-            <%= f.label :email %>
-            <%= f.email_field :email, class: 'form-control' %>
+            <div class="form-group">
+                <label for="message_email" class="col-sm-2 control-label"><%= f.label :email %></label>
+                <div class="col-sm-10">
+                    <%= f.text_field :email, class: "form-control", placeholder: "sample@gmail.com" %>
+                </div>
+            </div>
+        
+            <div class="form-group">
+                <label for="message_password" class="col-sm-2 control-label"><%= f.label :password %></label>
+                <div class="col-sm-10">
+                    <%= f.password_field :password, class: 'form-control', placeholder: "*************" %>
+                </div>
+            </div>
             
-            <%= f.label :password %>
-            <%= f.password_field :password, class: 'form-control' %>
-            
-            <%= f.submit "Log in", class: "btn btn-parimary" %>
+            <div class="form-group">
+                <div class= "col-sm-offset-2 col-sm-4 col-sm-offset-1">
+                    <%= f.submit "Log in", class: "btn btn-sm btn-primary" %>
+                </div>
+                <div class= "col-sm-6">
+                    <p>New user? <%= link_to "Sign up now!", signup_path %></p>    
+                </div>
+            </div>
         <% end %>
-        
-        <p>New user? <%= link_to "Sign up now!", signup_path %></p>
     </div>
 </div>

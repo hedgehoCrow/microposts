@@ -1,23 +1,55 @@
-<h1>Sign up</h1>
+<div class="row">
+    <div class="form-group h1">
+        <div class="icon col-sm-offset-5 col-sm-1">
+            <span class="glyphicon glyphicon glyphicon-user" aria-hidden="true"></span>
+        </div>
+        <div class="content col-sm-6">
+            Sign up
+        </div>
+    </div>
+</div>
+
+<br /><br />
 
 <div class="row">
     <div class="col-md-6 col-md-offset-3">
-        <%= form_for(@user) do |f| %>
+        <%= form_for(@user, html: { class: "form-horizontal" }) do |f| %>
             <%= render 'shared/error_messages', object: f.object %>
-           
-            <%= f.label :name %>
-            <%= f.text_field :name %>
+        
+        
+            <div class="form-group">
+                <label for="message_name" class="col-sm-2 control-label"><%= f.label :name %></label>
+                <div class="col-sm-10">
+                    <%= f.text_field :name, class: "form-control", placeholder: "山田太郎" %>
+                </div>
+            </div>
+        
+            <div class="form-group">
+                <label for="message_email" class="col-sm-2 control-label"><%= f.label :email %></label>
+                <div class="col-sm-10">
+                    <%= f.text_field :email, class: "form-control", placeholder: "sample@gmail.com" %>
+                </div>
+            </div>
+        
+            <div class="form-group">
+                <label for="message_password" class="col-sm-2 control-label"><%= f.label :password %></label>
+                <div class="col-sm-10">
+                    <%= f.password_field :password, class: 'form-control', placeholder: "*************" %>
+                </div>
+            </div>
             
-            <%= f.label :email %>
-            <%= f.text_field :email %>
+            <div class="form-group">
+                <label for="message_password_confirmation" class="col-sm-2 control-label"><%= f.label :password_confirmation, "Confirmation" %></label>
+                <div class="col-sm-10">
+                    <%= f.password_field :password_confirmation, class: 'form-control', placeholder: "*************" %>
+                </div>
+            </div>
             
-            <%= f.label :password %>
-            <%= f.password_field :password %>
-            
-            <%= f.label :password_confirmation, "Confirmation" %>
-            <%= f.password_field :password_confirmation %>
-            
-            <%= f.submit "Create my account", class: "btn btn-large btn-parimary" %>
+            <div class="form-group">
+                <div class= "col-sm-offset-2 col-sm-4 col-sm-offset-1">
+                    <%= f.submit "Create my account", class: "btn btn-sm btn-primary" %>
+                </div>
+            </div>
         <% end %>
     </div>
 </div>
