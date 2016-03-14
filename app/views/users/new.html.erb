@@ -18,28 +18,28 @@
         
         
             <div class="form-group">
-                <label for="message_name" class="col-sm-2 control-label"><%= f.label :name %></label>
+                <div class="col-sm-2 control-label"><%= f.label :name %></div>
                 <div class="col-sm-10">
                     <%= f.text_field :name, class: "form-control", placeholder: "山田太郎" %>
                 </div>
             </div>
         
             <div class="form-group">
-                <label for="message_email" class="col-sm-2 control-label"><%= f.label :email %></label>
+                <div class="col-sm-2 control-label"><%= f.label :email %></div>
                 <div class="col-sm-10">
                     <%= f.text_field :email, class: "form-control", placeholder: "sample@gmail.com" %>
                 </div>
             </div>
         
             <div class="form-group">
-                <label for="message_password" class="col-sm-2 control-label"><%= f.label :password %></label>
+                <div class="col-sm-2 control-label"><%= f.label :password %></div>
                 <div class="col-sm-10">
                     <%= f.password_field :password, class: 'form-control', placeholder: "*************" %>
                 </div>
             </div>
             
             <div class="form-group">
-                <label for="message_password_confirmation" class="col-sm-2 control-label"><%= f.label :password_confirmation, "Confirmation" %></label>
+                <div class="col-sm-2 control-label"><%= f.label :password_confirmation, "Confirmation" %></div>
                 <div class="col-sm-10">
                     <%= f.password_field :password_confirmation, class: 'form-control', placeholder: "*************" %>
                 </div>
