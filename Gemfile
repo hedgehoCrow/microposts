@@ -33,6 +33,7 @@ gem 'carrierwave', '0.10.0'
 gem 'mini_magick', '3.8.0'
 gem 'fog', '1.36.0'
 gem 'cloudinary'
+gem 'rails_12factor', group: :production
 
 #gem 'will_paginate', '3.0.7'
 #gem 'bootstrap-will_paginate', '0.0.10'
