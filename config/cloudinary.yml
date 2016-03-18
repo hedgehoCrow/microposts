@@ -1,0 +1,19 @@
+---
+development:
+  cloud_name: hedgehog
+  api_key: '556371222713471'
+  api_secret: lzBG3mfRh2qRRmMMz33jefa0tYg
+  enhance_image_tag: true
+  static_image_support: false
+production:
+  cloud_name: hedgehog
+  api_key: '556371222713471'
+  api_secret: lzBG3mfRh2qRRmMMz33jefa0tYg
+  enhance_image_tag: true
+  static_image_support: true
+test:
+  cloud_name: hedgehog
+  api_key: '556371222713471'
+  api_secret: lzBG3mfRh2qRRmMMz33jefa0tYg
+  enhance_image_tag: true
+  static_image_support: false
