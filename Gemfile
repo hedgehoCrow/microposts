@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.2.5'
+gem 'rails', '4.2.11.1'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3', group: :development
 gem 'pg', group: :production
@@ -24,7 +24,7 @@ gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0', group: :doc
 
-gem 'bootstrap-sass'
+gem "bootstrap-sass", ">= 3.4.1"
 
 # Use ActiveModel has_secure_password
 gem 'bcrypt', '~> 3.1.7'
@@ -33,6 +33,9 @@ gem 'carrierwave', '0.10.0'
 gem 'mini_magick', '3.8.0'
 gem 'fog', '1.36.0'
 gem 'cloudinary'
+gem "actionview", ">= 4.2.11.1"
+gem "activejob", ">= 4.2.11"
+gem "activerecord", ">= 4.2.7.1"
 #gem 'rails_12factor', group: :production
 
 #gem 'will_paginate', '3.0.7'
