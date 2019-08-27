@@ -36,6 +36,7 @@ gem 'cloudinary'
 gem "actionview", ">= 4.2.11.1"
 gem "activejob", ">= 4.2.11"
 gem "activerecord", ">= 4.2.7.1"
+gem "nokogiri", ">= 1.10.4"
 #gem 'rails_12factor', group: :production
 
 #gem 'will_paginate', '3.0.7'
